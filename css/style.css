@@ -18,23 +18,12 @@ a {
 .list {
   flex: 1 300px;
   display: block;
-  width: 300px;
+  max-width: 300px;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
-@media only screen and (min-width: 45em) {
-  .list {
 
-      max-width: 300px;
-  }
-	.textbox {
-		padding: 0px;
-	}
-	.textbox:focus {
-    width: 300px;
-	}
-}
 .list h1 {
   position: relative;
   background: #1abc9c;
@@ -93,7 +82,7 @@ a {
 
 .google {
     margin: -50px auto -20px;
-    background-image: url(/images/ggl.png);
+    background-image: url("/images/ggl.png");
     width: 400px;
     height: 200px;
 }
@@ -111,4 +100,12 @@ a {
 .textbox:focus {
   width: 400px;
   outline: none;
+}
+@media only screen and (max-width: 45em) {
+	.textbox:focus {
+    width: 300px!important;
+	}
+	.list {
+		max-width: 95vw;
+	}
 }
