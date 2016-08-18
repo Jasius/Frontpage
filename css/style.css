@@ -2,10 +2,11 @@ body {
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   background: #ECF0F1;
+  background: #222;
 }
 a {
   text-decoration: none;
-  color: #0057A6;
+  color: #eee;
 }
 .section {
     display: flex;
@@ -27,11 +28,14 @@ a {
 
       max-width: 300px;
   }
+	.textbox {
+		padding: 0px;
+	}
 }
 .list h1 {
   position: relative;
   background: #1abc9c;
-  color: #fff;
+  color: #eee;
   margin: 0;
   padding: 10px 20px;
   font-size: 18px;
@@ -46,20 +50,20 @@ a {
   padding: 0;
 }
 .list ul li {
-  background: #fff;
+  background: #444;
   height: 40px;
-  color: #666;
+  color: #eee;
   line-height: 40px;
   padding: 0 20px 0 0;
 }
 .list ul li:hover, .list ul li:nth-child(2n):hover {
-  background: #d1f8f1;
+  background: #56877e;
 }
 .list ul li a {
   margin-left: 15px;
 }
 .list ul li:nth-child(2n) {
-  background: #f7f7f7;
+  background: #333;
 }
 .list ul li:hover a {
   width: 40px;
@@ -69,6 +73,7 @@ a {
 /* Google */
 #containter {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .google {
