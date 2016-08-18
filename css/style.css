@@ -72,6 +72,29 @@ a {
   background: #333;
 }
 
+.textbox {
+    background-color: #fff;
+    height: 38px;
+	width: 350px;
+    vertical-align: top;
+    border: 1px solid #d9d9d9;
+	padding: 0 10px;
+	transition: width 1s;
+}
+
+.textbox:focus {
+  outline: none;
+  border-color: #1da1f2;
+}
+@media only screen and (max-width: 45em) {
+	.textbox:focus {
+    width: 300px!important;
+	}
+	.list {
+		max-width: 95vw;
+	}
+}
+
 /* Google */
 #container {
 	text-align: center;
@@ -84,27 +107,4 @@ a {
     margin: -50px auto -20px;
     width: 400px;
     height: 200px;
-}
-
-.textbox {
-    background-color: #fff;
-    height: 38px;
-	width: 300px;
-    vertical-align: top;
-    border: 1px solid #d9d9d9;
-	padding: 0 10px;
-	transition: width 1s;
-}
-
-.textbox:focus {
-  width: 400px;
-  outline: none;
-}
-@media only screen and (max-width: 45em) {
-	.textbox:focus {
-    width: 300px!important;
-	}
-	.list {
-		max-width: 95vw;
-	}
 }
