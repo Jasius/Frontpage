@@ -96,6 +96,16 @@ a {
 	.list {
 		max-width: 95vw;
 	}
+.list ul {
+    max-height: 0px;
+    display: none;
+    transition: 2s;
+}
+
+.list:hover > ul {
+    display: block;
+    max-height: 100%;
+}
 }
 
 /* Google */
