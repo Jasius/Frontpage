@@ -94,16 +94,20 @@ a {
 	max-width: 95vw;
 }
     .list ul {
-        max-height: 0;
-        transition: 2s;
-        visibility: hidden;
+    -webkit-transition: 500ms max-height ease-out;
+    transition: 800ms max-height ease-out;
+    overflow: hidden;
+	max-height: 0px;
 
     }
 
-    .list:hover>ul {
-        visibility: visible;
-        max-height: 300px;
+    .list:hover>ul, .list:hover ul li  {
+        max-height: 800px;
+		display: block;
     }
+	.list ul li {
+    display: none;
+	}
 }
 
 /* Google */
