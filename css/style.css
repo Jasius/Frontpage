@@ -4,6 +4,9 @@ body {
   background: #ECF0F1;
   background: #222;
 }
+body::-webkit-scrollbar {
+	display: none
+}
 a {
   text-decoration: none;
   color: #eee;
