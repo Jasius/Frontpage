@@ -93,16 +93,17 @@ a {
 .list {
 	max-width: 95vw;
 }
-.list ul {
-    max-height: 0px;
-    display: none;
-    transition: 2s;
-}
+    .list ul {
+        max-height: 0;
+        transition: 2s;
+        visibility: hidden;
 
-.list:hover > ul {
-    display: block;
-    max-height: 100%;
-}
+    }
+
+    .list:hover>ul {
+        visibility: visible;
+        max-height: 300px;
+    }
 }
 
 /* Google */
