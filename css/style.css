@@ -107,6 +107,7 @@ a {
     }
 	.list ul li {
     display: none;
+		max-height: 800px;
 	}
 }
 
