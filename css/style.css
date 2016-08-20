@@ -64,10 +64,10 @@ a {
   padding: 0 20px 0 0;
 }
 .list ul li:hover, .list ul li:nth-child(2n):hover {
-  background: #56877e;
+  background: #2d2d2d;
 }
 .list ul li a {
-  margin-left: 15px;
+  padding-left: 15px;
   position: absolute;
   width: 295px;
 }
@@ -93,22 +93,24 @@ a {
 .list {
 	max-width: 95vw;
 }
-    .list ul {
-    -webkit-transition: 500ms max-height ease-out;
-    transition: 800ms max-height ease-out;
-    overflow: hidden;
+
+.list ul {
+	-webkit-transition: 500ms max-height ease-out;
+	transition: 800ms max-height ease-out;
+	overflow: hidden;
 	max-height: 0px;
+}
 
-    }
+.list:hover>ul,
+.list:hover ul li {
+	max-height: 800px;
+	display: block;
+}
 
-    .list:hover>ul, .list:hover ul li  {
-        max-height: 800px;
-		display: block;
-    }
-	.list ul li {
-    display: none;
-		max-height: 800px;
-	}
+.list ul li {
+	display: none;
+	max-height: 800px;
+}
 }
 
 /* Google */
@@ -116,11 +118,8 @@ a {
 	text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 400px;
 }
 
 .google {
     margin: -50px auto -20px;
-    width: 400px;
-    height: 200px;
 }
