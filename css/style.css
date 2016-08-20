@@ -16,6 +16,9 @@ a {
     flex-wrap: wrap;
 	justify-content: center;
 }
+.section.main {
+	margin-top: 20px;
+}
 
 .list {
   flex: 1 300px;
