@@ -114,6 +114,9 @@ a {
 	display: none;
 	max-height: 800px;
 }
+.section.main {
+	margin-top: 0px;
+}
 }
 
 /* Google */
