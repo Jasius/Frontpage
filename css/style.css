@@ -1,25 +1,28 @@
+/* line 1, D:/github repos/Frontpage/css/style.scss */
 body {
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   background: #ECF0F1;
-  background: #222;
-}
-body::-webkit-scrollbar {
-	display: none
-}
+  background: #222; }
+  /* line 6, D:/github repos/Frontpage/css/style.scss */
+  body::-webkit-scrollbar {
+    display: none; }
+
+/* line 11, D:/github repos/Frontpage/css/style.scss */
 a {
   text-decoration: none;
-  color: #eee;
-}
-.section {
-    display: flex;
-    flex-wrap: wrap;
-	justify-content: center;
-}
-.section.main {
-	margin-top: 20px;
-}
+  color: #eee; }
 
+/* line 16, D:/github repos/Frontpage/css/style.scss */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  /* line 20, D:/github repos/Frontpage/css/style.scss */
+  .section.main {
+    margin-top: 20px; }
+
+/* line 25, D:/github repos/Frontpage/css/style.scss */
 .list {
   flex: 1 300px;
   display: block;
@@ -27,107 +30,109 @@ a {
   margin: 0 5px;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-}
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+  /* line 33, D:/github repos/Frontpage/css/style.scss */
+  .list h1 {
+    position: relative;
+    background: #1abc9c;
+    color: #eee;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400; }
 
-.list h1 {
-  position: relative;
-  background: #1abc9c;
-  color: #eee;
-  margin: 0;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: 400;
-}
+/* line 44, D:/github repos/Frontpage/css/style.scss */
 .reddit h1 {
-  background: orangered;
-}
+  background: orangered; }
+
+/* line 48, D:/github repos/Frontpage/css/style.scss */
 .redditmod h1 {
-  background: #47d15f;
-}
+  background: #47d15f; }
+
+/* line 52, D:/github repos/Frontpage/css/style.scss */
 .social h1 {
-	background: #1da1f2;
-}
+  background: #1da1f2; }
+
+/* line 56, D:/github repos/Frontpage/css/style.scss */
 .fun h1 {
-	background: #cd201f;
-}
+  background: #cd201f; }
+
+/* line 60, D:/github repos/Frontpage/css/style.scss */
 .admin h1 {
-	background: #ff9800;
-}
+  background: #ff9800; }
+
+/* line 64, D:/github repos/Frontpage/css/style.scss */
 .list ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-.list ul li {
-  background: #444;
-  height: 40px;
-  color: #eee;
-  line-height: 40px;
-  padding: 0 20px 0 0;
-}
-.list ul li:hover, .list ul li:nth-child(2n):hover {
-  background: #2d2d2d;
-}
-.list ul li a {
-  padding-left: 15px;
-  position: absolute;
-  width: 285px;
-}
-.list ul li:nth-child(2n) {
-  background: #333;
-}
+  padding: 0; }
+  /* line 68, D:/github repos/Frontpage/css/style.scss */
+  .list ul li {
+    background: #444;
+    height: 40px;
+    color: #eee;
+    line-height: 40px; }
+    /* line 73, D:/github repos/Frontpage/css/style.scss */
+    .list ul li:hover, .list ul li:nth-child(2n):hover {
+      background: #2d2d2d; }
+    /* line 76, D:/github repos/Frontpage/css/style.scss */
+    .list ul li a {
+      padding-left: 15px;
+      display: block; }
+    /* line 80, D:/github repos/Frontpage/css/style.scss */
+    .list ul li:nth-child(2n) {
+      background: #333; }
 
+/* line 86, D:/github repos/Frontpage/css/style.scss */
 .textbox {
-    background-color: #fff;
-    height: 38px;
-	width: 350px;
-    vertical-align: top;
-    border: 1px solid #d9d9d9;
-	padding: 0 10px;
-}
+  background-color: #fff;
+  height: 38px;
+  width: 350px;
+  vertical-align: top;
+  border: 1px solid #d9d9d9;
+  padding: 0 10px; }
+  /* line 93, D:/github repos/Frontpage/css/style.scss */
+  .textbox:focus {
+    outline: none;
+    border-color: #1da1f2; }
 
-.textbox:focus {
-  outline: none;
-  border-color: #1da1f2;
-}
 @media only screen and (max-width: 45em) {
-.list {
-	max-width: 95vw;
-}
-.textbox {
-	width: 90vw;
-}
-.list ul {
-	-webkit-transition: 500ms max-height ease-out;
-	transition: 800ms max-height ease-out;
-	overflow: hidden;
-	max-height: 0px;
-}
-
-.list:hover>ul,
-.list:hover ul li {
-	max-height: 800px;
-	display: block;
-}
-
-.list ul li {
-	display: none;
-	max-height: 800px;
-}
-.section.main {
-	margin-top: 0px;
-}
-}
+  /* line 100, D:/github repos/Frontpage/css/style.scss */
+  .list {
+    max-width: 95vw; }
+  /* line 103, D:/github repos/Frontpage/css/style.scss */
+  .textbox {
+    width: 90vw; }
+  /* line 107, D:/github repos/Frontpage/css/style.scss */
+  .list ul {
+    -webkit-transition: 500ms max-height ease-out;
+    transition: 800ms max-height ease-out;
+    overflow: hidden;
+    max-height: 0px; }
+  /* line 114, D:/github repos/Frontpage/css/style.scss */
+  .list:hover > ul, .list:hover ul li {
+    max-height: 800px;
+    display: block; }
+  /* line 119, D:/github repos/Frontpage/css/style.scss */
+  .list ul li {
+    display: none;
+    max-height: 800px; }
+  /* line 124, D:/github repos/Frontpage/css/style.scss */
+  .section.main {
+    margin-top: 0px; } }
 
 /* Google */
-#container {
-	text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
+/* line 131, D:/github repos/Frontpage/css/style.scss */
+.test {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px; }
 
+/* line 137, D:/github repos/Frontpage/css/style.scss */
 .google {
-    margin: -50px auto -20px;
-	max-width: 100vw;
-}
+  margin: -50px auto -20px;
+  max-width: 100vw; }
+
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=style.css.map */
