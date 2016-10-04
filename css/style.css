@@ -18,41 +18,38 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  /* line 20, D:/github repos/Frontpage/css/style.scss */
-  .section.main {
-    margin-top: 20px; }
 
-/* line 25, D:/github repos/Frontpage/css/style.scss */
+/* line 22, D:/github repos/Frontpage/css/style.scss */
 .list {
   flex: 1 300px;
   display: block;
   max-width: 300px;
-  margin: 0 5px;
+  margin: 5px;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
-  /* line 33, D:/github repos/Frontpage/css/style.scss */
+  /* line 30, D:/github repos/Frontpage/css/style.scss */
   .list ul {
     list-style: none;
     margin: 0;
     padding: 0; }
-    /* line 37, D:/github repos/Frontpage/css/style.scss */
+    /* line 34, D:/github repos/Frontpage/css/style.scss */
     .list ul li {
       background: #444;
       height: 40px;
       color: #eee;
       line-height: 40px; }
-      /* line 42, D:/github repos/Frontpage/css/style.scss */
+      /* line 39, D:/github repos/Frontpage/css/style.scss */
       .list ul li:hover, .list ul li:nth-child(2n):hover {
         background: #2d2d2d; }
-      /* line 45, D:/github repos/Frontpage/css/style.scss */
+      /* line 42, D:/github repos/Frontpage/css/style.scss */
       .list ul li a {
         padding-left: 15px;
         display: block; }
-      /* line 49, D:/github repos/Frontpage/css/style.scss */
+      /* line 46, D:/github repos/Frontpage/css/style.scss */
       .list ul li:nth-child(2n) {
         background: #333; }
-  /* line 54, D:/github repos/Frontpage/css/style.scss */
+  /* line 51, D:/github repos/Frontpage/css/style.scss */
   .list h1 {
     position: relative;
     background: #1abc9c;
@@ -62,73 +59,75 @@ a {
     font-size: 18px;
     font-weight: 400; }
 
-/* line 65, D:/github repos/Frontpage/css/style.scss */
+/* line 62, D:/github repos/Frontpage/css/style.scss */
 .reddit h1 {
   background: orangered; }
 
-/* line 69, D:/github repos/Frontpage/css/style.scss */
+/* line 66, D:/github repos/Frontpage/css/style.scss */
 .redditmod h1 {
   background: #47d15f; }
 
-/* line 73, D:/github repos/Frontpage/css/style.scss */
+/* line 70, D:/github repos/Frontpage/css/style.scss */
 .social h1 {
   background: #1da1f2; }
 
-/* line 77, D:/github repos/Frontpage/css/style.scss */
+/* line 74, D:/github repos/Frontpage/css/style.scss */
 .fun h1 {
   background: #cd201f; }
 
-/* line 81, D:/github repos/Frontpage/css/style.scss */
+/* line 78, D:/github repos/Frontpage/css/style.scss */
 .admin h1 {
   background: #ff9800; }
 
-/* line 85, D:/github repos/Frontpage/css/style.scss */
+/* line 82, D:/github repos/Frontpage/css/style.scss */
 .textbox {
-  background-color: #fff;
+  background-color: #1b1b1b;
+  color: #eee;
   height: 38px;
   width: 350px;
   vertical-align: top;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #322929;
   padding: 0 10px; }
-  /* line 92, D:/github repos/Frontpage/css/style.scss */
+  /* line 90, D:/github repos/Frontpage/css/style.scss */
   .textbox:focus {
     outline: none;
     border-color: #1da1f2; }
 
 @media only screen and (max-width: 45em) {
-  /* line 99, D:/github repos/Frontpage/css/style.scss */
+  /* line 97, D:/github repos/Frontpage/css/style.scss */
   .list {
     max-width: 95vw; }
-  /* line 102, D:/github repos/Frontpage/css/style.scss */
+  /* line 100, D:/github repos/Frontpage/css/style.scss */
   .textbox {
     width: 90vw; }
-  /* line 106, D:/github repos/Frontpage/css/style.scss */
+  /* line 104, D:/github repos/Frontpage/css/style.scss */
   .list ul {
     -webkit-transition: 800ms max-height ease-out;
     transition: 800ms max-height ease-out;
     overflow: hidden;
-    max-height: 0px; }
-  /* line 113, D:/github repos/Frontpage/css/style.scss */
+    max-height: 0px;
+    transition-delay: 0.2s; }
+  /* line 112, D:/github repos/Frontpage/css/style.scss */
   .list:hover > ul, .list:hover ul li {
     max-height: 800px;
     display: block; }
-  /* line 118, D:/github repos/Frontpage/css/style.scss */
+  /* line 117, D:/github repos/Frontpage/css/style.scss */
   .list ul li {
     display: none; }
-  /* line 122, D:/github repos/Frontpage/css/style.scss */
-  .section.main {
-    margin-top: 0px; } }
+  /* line 121, D:/github repos/Frontpage/css/style.scss */
+  .list {
+    margin: 0px 5px; } }
 
 /* Google */
-/* line 129, D:/github repos/Frontpage/css/style.scss */
+/* line 128, D:/github repos/Frontpage/css/style.scss */
 .container {
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 20px; }
+  margin: auto;
+    margin-bottom: 20px; }
 
 /* line 135, D:/github repos/Frontpage/css/style.scss */
 .google {
-  margin: -50px auto -20px;
+  margin: -50px auto -25px;
   height: 200px; }
 
 /*# sourceMappingURL=styles.css.map */
