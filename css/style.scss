@@ -36,6 +36,7 @@ a {
     height: 40px;
     color: #eee;
     line-height: 40px;
+	transition: background ease-in-out 0.1s;
     &:hover, &:nth-child(2n):hover {
       background: #2d2d2d;
     }
@@ -89,7 +90,7 @@ a {
   padding: 0 10px;
   &:focus {
     outline: none;
-    border-color: #1da1f2;
+    border-color: #22475d;
   }
 }
 
@@ -135,6 +136,12 @@ a {
 .google {
   margin: -50px auto -25px;
   height: 200px;
+  transition: opacity ease-in-out 0.5s;
+  opacity: 0.8;
+  &:hover {
+	opacity: 1;
+  }
 }
+
 
 /*# sourceMappingURL=styles.css.map */
