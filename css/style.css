@@ -82,6 +82,7 @@ a {
 
 /* line 83, D:/github repos/Frontpage/css/style.scss */
 .textbox {
+  position: relative;
   background-color: #1b1b1b;
   color: #eee;
   height: 38px;
@@ -89,50 +90,50 @@ a {
   vertical-align: top;
   border: 1px solid #322929;
   padding: 0 10px; }
-  /* line 91, D:/github repos/Frontpage/css/style.scss */
+  /* line 92, D:/github repos/Frontpage/css/style.scss */
   .textbox:focus {
     outline: none;
     border-color: #22475d; }
 
 @media only screen and (max-width: 45em) {
-  /* line 98, D:/github repos/Frontpage/css/style.scss */
+  /* line 99, D:/github repos/Frontpage/css/style.scss */
   .list {
     max-width: 95vw; }
-  /* line 101, D:/github repos/Frontpage/css/style.scss */
+  /* line 102, D:/github repos/Frontpage/css/style.scss */
   .textbox {
     width: 90vw; }
-  /* line 105, D:/github repos/Frontpage/css/style.scss */
+  /* line 106, D:/github repos/Frontpage/css/style.scss */
   .list ul {
     -webkit-transition: 800ms max-height ease-out;
     transition: 800ms max-height ease-out;
     overflow: hidden;
     max-height: 0px;
     transition-delay: 0.2s; }
-  /* line 113, D:/github repos/Frontpage/css/style.scss */
+  /* line 114, D:/github repos/Frontpage/css/style.scss */
   .list:hover > ul, .list:hover ul li {
     max-height: 800px;
     display: block; }
-  /* line 118, D:/github repos/Frontpage/css/style.scss */
+  /* line 119, D:/github repos/Frontpage/css/style.scss */
   .list ul li {
     display: none; }
-  /* line 122, D:/github repos/Frontpage/css/style.scss */
+  /* line 123, D:/github repos/Frontpage/css/style.scss */
   .list {
     margin: 0px 5px; } }
 
 /* Google */
-/* line 129, D:/github repos/Frontpage/css/style.scss */
+/* line 130, D:/github repos/Frontpage/css/style.scss */
 .container {
   text-align: center;
   margin: auto;
     margin-bottom: 20px; }
 
-/* line 136, D:/github repos/Frontpage/css/style.scss */
+/* line 137, D:/github repos/Frontpage/css/style.scss */
 .google {
   margin: -50px auto -25px;
   height: 200px;
   transition: opacity ease-in-out 0.5s;
   opacity: 0.8; }
-  /* line 141, D:/github repos/Frontpage/css/style.scss */
+  /* line 142, D:/github repos/Frontpage/css/style.scss */
   .google:hover {
     opacity: 1; }
 
