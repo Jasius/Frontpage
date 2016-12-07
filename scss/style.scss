@@ -1,5 +1,10 @@
+$font-main: "Segoe UI",
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-main;
   margin: 0;
   background: #ECF0F1;
   background: #222;
