@@ -1,56 +1,43 @@
-/* line 1, D:/github repos/Frontpage/css/style.scss */
 body {
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   background: #ECF0F1;
   background: #222; }
-  /* line 6, D:/github repos/Frontpage/css/style.scss */
   body::-webkit-scrollbar {
     display: none; }
 
-/* line 11, D:/github repos/Frontpage/css/style.scss */
 a {
   text-decoration: none;
   color: #eee; }
 
-/* line 16, D:/github repos/Frontpage/css/style.scss */
 .section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0px 15px; }
 
-/* line 22, D:/github repos/Frontpage/css/style.scss */
 .list {
-  flex: 1 300px;
-  display: block;
+  flex: 1 250px;
   max-width: 300px;
-  margin: 5px;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin: 5px 8px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
-  /* line 30, D:/github repos/Frontpage/css/style.scss */
   .list ul {
     list-style: none;
     margin: 0;
     padding: 0; }
-    /* line 34, D:/github repos/Frontpage/css/style.scss */
     .list ul li {
       background: #444;
       height: 40px;
       color: #eee;
       line-height: 40px;
       transition: background ease-in-out 0.1s; }
-      /* line 40, D:/github repos/Frontpage/css/style.scss */
       .list ul li:hover, .list ul li:nth-child(2n):hover {
         background: #2d2d2d; }
-      /* line 43, D:/github repos/Frontpage/css/style.scss */
       .list ul li a {
         padding-left: 15px;
         display: block; }
-      /* line 47, D:/github repos/Frontpage/css/style.scss */
       .list ul li:nth-child(2n) {
         background: #333; }
-  /* line 52, D:/github repos/Frontpage/css/style.scss */
   .list h1 {
     position: relative;
     background: #1abc9c;
@@ -60,27 +47,21 @@ a {
     font-size: 18px;
     font-weight: 400; }
 
-/* line 63, D:/github repos/Frontpage/css/style.scss */
 .reddit h1 {
   background: orangered; }
 
-/* line 67, D:/github repos/Frontpage/css/style.scss */
 .redditmod h1 {
   background: #47d15f; }
 
-/* line 71, D:/github repos/Frontpage/css/style.scss */
 .social h1 {
   background: #1da1f2; }
 
-/* line 75, D:/github repos/Frontpage/css/style.scss */
 .fun h1 {
   background: #cd201f; }
 
-/* line 79, D:/github repos/Frontpage/css/style.scss */
 .admin h1 {
   background: #ff9800; }
 
-/* line 83, D:/github repos/Frontpage/css/style.scss */
 .textbox {
   position: relative;
   background-color: #1b1b1b;
@@ -90,50 +71,43 @@ a {
   vertical-align: top;
   border: 1px solid #322929;
   padding: 0 10px; }
-  /* line 92, D:/github repos/Frontpage/css/style.scss */
   .textbox:focus {
     outline: none;
     border-color: #22475d; }
 
 @media only screen and (max-width: 45em) {
-  /* line 99, D:/github repos/Frontpage/css/style.scss */
   .list {
     max-width: 95vw; }
-  /* line 102, D:/github repos/Frontpage/css/style.scss */
+
   .textbox {
     width: 90vw; }
-  /* line 106, D:/github repos/Frontpage/css/style.scss */
+
   .list ul {
-    -webkit-transition: 800ms max-height ease-out;
     transition: 800ms max-height ease-out;
     overflow: hidden;
     max-height: 0px;
     transition-delay: 0.2s; }
-  /* line 114, D:/github repos/Frontpage/css/style.scss */
-  .list:hover > ul, .list:hover ul li {
+  .list:hover > ul,
+  .list:hover ul li {
     max-height: 800px;
     display: block; }
-  /* line 119, D:/github repos/Frontpage/css/style.scss */
   .list ul li {
     display: none; }
-  /* line 123, D:/github repos/Frontpage/css/style.scss */
+
   .list {
     margin: 0px 5px; } }
-
 /* Google */
-/* line 130, D:/github repos/Frontpage/css/style.scss */
 .container {
   text-align: center;
   margin: auto;
     margin-bottom: 20px; }
 
-/* line 137, D:/github repos/Frontpage/css/style.scss */
 .google {
   margin: -50px auto -25px;
+  width: 400px;
   height: 200px;
   transition: opacity ease-in-out 0.5s;
   opacity: 0.8; }
-  /* line 142, D:/github repos/Frontpage/css/style.scss */
   .google:hover {
     opacity: 1; }
 

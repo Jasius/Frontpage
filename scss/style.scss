@@ -17,38 +17,37 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0px 15px;
 }
 
 .list {
-  flex: 1 300px;
-  display: block;
+  flex: 1 250px;
   max-width: 300px;
-  margin: 5px;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin: 5px 8px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  li {
-    background: #444;
-    height: 40px;
-    color: #eee;
-    line-height: 40px;
-	transition: background ease-in-out 0.1s;
-    &:hover, &:nth-child(2n):hover {
-      background: #2d2d2d;
-    }
-    a {
-      padding-left: 15px;
-      display: block;
-    }
-    &:nth-child(2n) {
-      background: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      background: #444;
+      height: 40px;
+      color: #eee;
+      line-height: 40px;
+      transition: background ease-in-out 0.1s;
+      &:hover,
+      &:nth-child(2n):hover {
+        background: #2d2d2d;
+      }
+      a {
+        padding-left: 15px;
+        display: block;
+      }
+      &:nth-child(2n) {
+        background: #333;
+      }
     }
   }
-}
   h1 {
     position: relative;
     background: #1abc9c;
@@ -104,14 +103,14 @@ a {
   }
   .list {
     ul {
-      -webkit-transition: 800ms max-height ease-out;
       transition: 800ms max-height ease-out;
       overflow: hidden;
       max-height: 0px;
-	  transition-delay: 0.2s;
+      transition-delay: 0.2s;
     }
     &:hover {
-      > ul, ul li {
+      >ul,
+      ul li {
         max-height: 800px;
         display: block;
       }
@@ -125,13 +124,14 @@ a {
   }
 }
 
+
 /* Google */
 
 .container {
   text-align: center;
-	margin: auto {
-		bottom: 20px;
-	}
+  margin: auto {
+    bottom: 20px;
+  }
 }
 
 .google {
@@ -141,7 +141,7 @@ a {
   transition: opacity ease-in-out 0.5s;
   opacity: 0.8;
   &:hover {
-	opacity: 1;
+    opacity: 1;
   }
 }
 
