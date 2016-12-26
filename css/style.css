@@ -1,7 +1,6 @@
 body {
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
-  background: #ECF0F1;
   background: #222; }
   body::-webkit-scrollbar {
     display: none; }
@@ -40,7 +39,7 @@ a {
         background: #333; }
   .list h1 {
     position: relative;
-    background: #1abc9c;
+    background: #00A388;
     color: #eee;
     margin: 0;
     padding: 10px 20px;
@@ -61,6 +60,15 @@ a {
 
 .admin h1 {
   background: #ff9800; }
+
+.orangyred h1 {
+  background: #FF6138; }
+
+.darkblue h1 {
+  background: #04756F; }
+
+.blueyish h1 {
+  background: #225378; }
 
 .textbox {
   position: relative;
@@ -96,7 +104,6 @@ a {
 
   .list {
     margin: 0px 5px; } }
-/* Google */
 .container {
   text-align: center;
   margin: auto;

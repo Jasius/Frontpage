@@ -3,10 +3,13 @@ $font-main: "Segoe UI",
 Helvetica,
 Arial,
 sans-serif;
+//colors
+$color-li-main: #444;
+$color-li-sec: #333;
 body {
   font-family: $font-main;
   margin: 0;
-  background: #ECF0F1;
+  //background: #ECF0F1;
   background: #222;
   &::-webkit-scrollbar {
     display: none;
@@ -55,7 +58,7 @@ a {
   }
   h1 {
     position: relative;
-    background: #1abc9c;
+    background: #00A388;
     color: #eee;
     margin: 0;
     padding: 10px 20px;
@@ -82,6 +85,18 @@ a {
 
 .admin h1 {
   background: #ff9800;
+}
+
+.orangyred h1 {
+  background: #FF6138;
+}
+
+.darkblue h1 {
+  background: #04756F
+}
+
+.blueyish h1 {
+  background: #225378;
 }
 
 .textbox {
@@ -129,9 +144,7 @@ a {
   }
 }
 
-
-/* Google */
-
+//google
 .container {
   text-align: center;
   margin: auto {
