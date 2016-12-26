@@ -1,0 +1,122 @@
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: #ECF0F1; }
+  body::-webkit-scrollbar {
+    display: none; }
+
+a {
+  text-decoration: none;
+  color: #222; }
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px 15px; }
+
+.list {
+  flex: 1 250px;
+  max-width: 300px;
+  margin: 5px 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+  .list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .list ul li {
+      background: #F5F5F5;
+      height: 40px;
+      color: #222;
+      line-height: 40px;
+      transition: background ease-in-out 0.1s; }
+      .list ul li:hover, .list ul li:nth-child(2n):hover {
+        background: #FCFFF5; }
+      .list ul li a {
+        padding-left: 15px;
+        display: block; }
+      .list ul li:nth-child(2n) {
+        background: #D9D9D9; }
+  .list h1 {
+    position: relative;
+    background: #00A388;
+    color: #eee;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400; }
+
+.reddit h1 {
+  background: orangered; }
+
+.redditmod h1 {
+  background: #47d15f; }
+
+.social h1 {
+  background: #1da1f2; }
+
+.fun h1 {
+  background: #cd201f; }
+
+.admin h1 {
+  background: #ff9800; }
+
+.orangyred h1 {
+  background: #FF6138; }
+
+.darkblue h1 {
+  background: #04756F; }
+
+.blueyish h1 {
+  background: #225378; }
+
+.textbox {
+  position: relative;
+  background: #f5f5f5;
+  color: #222;
+  height: 38px;
+  width: 350px;
+  vertical-align: top;
+  border: 1px solid #d9d9d9;
+  padding: 0 10px; }
+  .textbox:focus {
+    outline: none; }
+
+@media only screen and (max-width: 45em) {
+  .list {
+    max-width: 95vw; }
+
+  .textbox {
+    width: 90vw; }
+
+  .list ul {
+    transition: 800ms max-height ease-out;
+    overflow: hidden;
+    max-height: 0px;
+    transition-delay: 0.2s; }
+  .list:hover > ul,
+  .list:hover ul li {
+    max-height: 800px;
+    display: block; }
+  .list ul li {
+    display: none; }
+
+  .list {
+    margin: 0px 5px; } }
+.container {
+  text-align: center;
+  margin: auto;
+    margin-bottom: 20px; }
+
+.google {
+  margin: -50px auto -25px;
+  width: 400px;
+  height: 200px;
+  transition: opacity ease-in-out 0.5s;
+  opacity: 0.8; }
+  .google:hover {
+    opacity: 1; }
+
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=light.css.map */

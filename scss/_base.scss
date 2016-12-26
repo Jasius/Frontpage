@@ -4,13 +4,10 @@ Helvetica,
 Arial,
 sans-serif;
 //colors
-$color-li-main: #444;
-$color-li-sec: #333;
 body {
   font-family: $font-main;
   margin: 0;
-  //background: #ECF0F1;
-  background: #222;
+  background: $color-background;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -18,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #eee;
+  color: $color-text;
 }
 
 .section {
@@ -38,21 +35,21 @@ a {
     margin: 0;
     padding: 0;
     li {
-      background: #444;
+      background: $color-li-main;
       height: 40px;
-      color: #eee;
+      color: $color-text;
       line-height: 40px;
       transition: background ease-in-out 0.1s;
       &:hover,
       &:nth-child(2n):hover {
-        background: #2d2d2d;
+        background: $color-bg-hover;
       }
       a {
         padding-left: 15px;
         display: block;
       }
       &:nth-child(2n) {
-        background: #333;
+        background: $color-li-sec;
       }
     }
   }
@@ -101,16 +98,16 @@ a {
 
 .textbox {
   position: relative;
-  background-color: #1b1b1b;
-  color: #eee;
+  background: $color-textbox;
+  color: $color-text;
   height: 38px;
   width: 350px;
   vertical-align: top;
-  border: 1px solid #322929;
+  border: 1px solid $color-textbox-border;
   padding: 0 10px;
   &:focus {
     outline: none;
-    border-color: #22475d;
+    //border-color: #22475d;
   }
 }
 
