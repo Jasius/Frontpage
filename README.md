@@ -1,9 +1,9 @@
 # Frontpage light
-![Desktop](http://i.imgur.com/D5fKn9M.png) 
-![Mobile](http://i.imgur.com/WI0u0WF.png) 
+![Desktop](https://cloud.githubusercontent.com/assets/11031051/21482072/cfb82b80-cb77-11e6-9b5c-dc34892023f0.png) 
+![Mobile](https://cloud.githubusercontent.com/assets/11031051/21482164/14b36b4a-cb79-11e6-9328-3adfa0e3529e.png) 
 # Frontpage dark
-![Desktop](http://i.imgur.com/D5fKn9M.png) 
-![Mobile](http://i.imgur.com/WI0u0WF.png) 
+![Desktop](https://cloud.githubusercontent.com/assets/11031051/21482080/e989a5fc-cb77-11e6-9468-51cb8547a850.png) 
+![Mobile](https://cloud.githubusercontent.com/assets/11031051/21482159/ff69ee44-cb78-11e6-9232-cc14f515406a.png) 
 # Frontpage modern
-![Desktop](http://i.imgur.com/D5fKn9M.png) 
-![Mobile](http://i.imgur.com/WI0u0WF.png) 
+![Desktop](https://cloud.githubusercontent.com/assets/11031051/21482072/cfb82b80-cb77-11e6-9b5c-dc34892023f0.png) 
+![Mobile](https://cloud.githubusercontent.com/assets/11031051/21482174/264eac3e-cb79-11e6-8bd9-5e1bb9f38932.png) 
