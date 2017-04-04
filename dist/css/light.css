@@ -1,13 +1,13 @@
 body {
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
-  background: #222; }
+  background: #ECF0F1; }
   body::-webkit-scrollbar {
     display: none; }
 
 a {
   text-decoration: none;
-  color: #eee; }
+  color: #222; }
 
 .section {
   display: flex;
@@ -25,18 +25,18 @@ a {
     margin: 0;
     padding: 0; }
     .list ul li {
-      background: #444;
+      background: #F5F5F5;
       height: 40px;
-      color: #eee;
+      color: #222;
       line-height: 40px;
       transition: background ease-in-out 0.1s; }
       .list ul li:hover, .list ul li:nth-child(2n):hover {
-        background: #2d2d2d; }
+        background: #FCFFF5; }
       .list ul li a {
         padding-left: 15px;
         display: block; }
       .list ul li:nth-child(2n) {
-        background: #333; }
+        background: #D9D9D9; }
   .list h1 {
     position: relative;
     background: #00A388;
@@ -72,12 +72,12 @@ a {
 
 .textbox {
   position: relative;
-  background: #1b1b1b;
-  color: #eee;
+  background: #f5f5f5;
+  color: #222;
   height: 38px;
   width: 350px;
   vertical-align: top;
-  border: 1px solid #322929;
+  border: 1px solid #d9d9d9;
   padding: 0 10px; }
   .textbox:focus {
     outline: none; }
@@ -85,10 +85,8 @@ a {
 @media only screen and (max-width: 45em) {
   .list {
     max-width: 95vw; }
-
   .textbox {
     width: 90vw; }
-
   .list ul {
     transition: 800ms max-height ease-out;
     overflow: hidden;
@@ -100,9 +98,9 @@ a {
     display: block; }
   .list ul li {
     display: none; }
-
   .list {
     margin: 0px 5px; } }
+
 .container {
   text-align: center;
   margin: auto;
@@ -118,5 +116,3 @@ a {
     opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */
-
-/*# sourceMappingURL=main.css.map */

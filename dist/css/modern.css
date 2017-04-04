@@ -85,10 +85,8 @@ a {
 @media only screen and (max-width: 45em) {
   .list {
     max-width: 95vw; }
-
   .textbox {
     width: 90vw; }
-
   .list ul {
     transition: 800ms max-height ease-out;
     overflow: hidden;
@@ -100,9 +98,9 @@ a {
     display: block; }
   .list ul li {
     display: none; }
-
   .list {
     margin: 0px 5px; } }
+
 .container {
   text-align: center;
   margin: auto;
@@ -119,10 +117,8 @@ a {
 
 /*# sourceMappingURL=styles.css.map */
 body {
-  background-image: url("../../images/forest.jpeg");
+  background-image: url("../../images/forest-min.jpeg");
   background-size: cover; }
 
 .list h1 {
   opacity: .9; }
-
-/*# sourceMappingURL=modern.css.map */
