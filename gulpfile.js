@@ -6,6 +6,7 @@ var livereload = require('gulp-livereload');
 var jimp = require('gulp-jimp-resize');
 var imagemin = require('gulp-imagemin');
 var pump = require('pump');
+var through2 = require('through2');
 
 gulp.task('sass', function () {
     gulp.src('./src/scss/*.scss')
