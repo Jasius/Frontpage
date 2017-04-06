@@ -47,6 +47,7 @@ a {
       a {
         padding-left: 15px;
         display: block;
+        transition: .5s;
       }
       &:nth-child(2n) {
         background: $color-li-sec;
