@@ -1,37 +1,20 @@
 {
-  "name": "package.json",
+  "name": "webpack",
   "version": "1.0.0",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-csso": "^3.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.1.2",
-    "gulp-livereload": "^3.8.1",
-    "gulp-jimp-resize": "2.0.2",
-    "gulp-imagemin": "^3.2.0",
-    "gulp-util": "3.0.8",
-    "vinyl": "2.0.1",
-    "bluebird": "3.5.0",
-    "pump": "^1.0.2"
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "prod": "webpack -p"
   },
-  "devDependencies": {
-    "gulp-jimp-resize": "^2.0.2",
-    "gulp-livereload": "^3.8.1",
-    "through2": "^2.0.3"
-  },
-  "description": "![Portfolio](https://raw.githubusercontent.com/Jasius/Portfolio/gh-pages/src/images/portfolio.PNG)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jasius/Portfolio.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "Jaska",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Jasius/Portfolio/issues"
-  },
-  "homepage": "https://github.com/Jasius/Portfolio#readme"
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.0",
+    "html-webpack-plugin": "^2.26.0",
+    "node-sass": "^4.4.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
 }

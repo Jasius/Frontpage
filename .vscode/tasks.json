@@ -1,27 +1,30 @@
 {
-    "version": "0.1.0",
-    "command": "gulp",
-    "isShellCommand": true,
-    "showOutput": "silent",
-    "tasks": [{
-            "taskName": "compile",
-            "isBuildCommand": true,
-            "isBackground": true
-        },
-        {
-            "taskName": "compress",
-            "isBuildCommand": true,
-            "isBackground": true
-        },
-        {
-            "taskName": "images",
-            "isBuildCommand": true,
-            "isBackground": true
-        },
-        {
-            "taskName": "resize",
-            "isBuildCommand": true,
-            "isBackground": true
-        }
-    ]
+  "name": "npmTask",
+  "version": "0.1.0",
+  "suppressTaskName": true,
+  "command": "npm",
+  "isShellCommand": true,
+  "args": [
+    "run"
+  ],
+  "tasks": [{
+      "taskName": "dev",
+      //Run On Shift+Ctrl+B
+      "isBuildCommand": true,
+      "isTestCommand": false,
+      "showOutput": "silent",
+      "args": [
+        "dev"
+      ]
+    },
+    {
+      "taskName": "prod",
+      "isTestCommand": false,
+      "showOutput": "silent",
+      "args": [
+        "prod"
+      ]
+    }
+  ]
 }
+
