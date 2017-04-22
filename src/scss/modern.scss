@@ -5,13 +5,12 @@ $color-bg-hover: #2d2d2d;
 $color-text: #eee;
 $color-textbox: #1b1b1b;
 $color-textbox-border: #322929;
-
-
 @import 'base';
 body {
-    background-image: url("../../images/forest-min.jpeg");
+    background-image: url('/images/forestmin.jpeg');
     background-size: cover;
 }
+
 .list h1 {
     opacity: .9;
 }
