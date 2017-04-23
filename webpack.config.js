@@ -10,18 +10,28 @@ module.exports = {
         'modern': './src/modern.js'
     },
     output: {
-        path: __dirname,
-        filename: "dist/js/[name].js"
+        path: path.resolve(__dirname, "dist"),
+        filename: "js/[name].js"
     },
     module: {
         rules: [{
-            test: /\.scss$/,
-            use: ExtractTextPlugin.extract({
-                fallback: 'style-loader',
-                use: ['css-loader', 'sass-loader'],
-                publicPath: 'dist'
-            })
-        }],
+                test: /\.(jp?g|png|svg|gif)$/i,
+                
+                use: [
+                    "file-loader?name=[hash:6].[ext]&outputPath=images/",
+                    "image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false"
+                ]
+            },
+            {
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'sass-loader'],
+                    publicPath: 'dist/'
+                }),
+
+            }
+        ],
         // loaders: [{
         //     test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/,
         //     loader: 'file-loader'
@@ -66,15 +76,9 @@ module.exports = {
             template: 'src/modern.ejs'
         }),
         new ExtractTextPlugin({
-            filename: 'dist/css/[name].css',
+            filename: '[name].css',
             disable: false,
             allChunks: true
         })
     ]
-}, {
-    loader: 'file-loader',
-    query: {
-        useRelativePath: true,
-        publicPath: 'dist'
-    }
 }
