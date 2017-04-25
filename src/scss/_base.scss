@@ -107,8 +107,16 @@ a {
   border: 1px solid $color-textbox-border;
   padding: 0 10px;
   &:focus {
-    outline: none;
-    //border-color: #22475d;
+    outline: none; //border-color: #22475d;
+  }
+}
+
+@media only screen and (max-width: 55em) {
+  .list {
+    max-width: 31vw
+  }
+  .section {
+    margin: 0;
   }
 }
 

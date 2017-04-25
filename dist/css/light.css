@@ -34,7 +34,8 @@ a {
         background: #FCFFF5; }
       .list ul li a {
         padding-left: 15px;
-        display: block; }
+        display: block;
+        transition: .5s; }
       .list ul li:nth-child(2n) {
         background: #D9D9D9; }
   .list h1 {
@@ -81,6 +82,12 @@ a {
   padding: 0 10px; }
   .textbox:focus {
     outline: none; }
+
+@media only screen and (max-width: 55em) {
+  .list {
+    max-width: 31vw; }
+  .section {
+    margin: 0; } }
 
 @media only screen and (max-width: 45em) {
   .list {
