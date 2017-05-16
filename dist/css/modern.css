@@ -1,7 +1,7 @@
 body {
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
-  background: #222; }
+  background: #282c3a; }
   body::-webkit-scrollbar {
     display: none; }
 
@@ -25,19 +25,19 @@ a {
     margin: 0;
     padding: 0; }
     .list ul li {
-      background: rgba(68, 68, 68, 0.9);
+      background: rgba(34, 36, 50, 0.9);
       height: 40px;
       color: #eee;
       line-height: 40px;
       transition: background ease-in-out 0.1s; }
       .list ul li:hover, .list ul li:nth-child(2n):hover {
-        background: #2d2d2d; }
+        background: rgba(40, 44, 58, 0.9); }
       .list ul li a {
         padding-left: 15px;
         display: block;
         transition: .5s; }
       .list ul li:nth-child(2n) {
-        background: rgba(51, 51, 51, 0.9); }
+        background: rgba(20, 25, 37, 0.9); }
   .list h1 {
     position: relative;
     background: #00A388;
@@ -73,7 +73,7 @@ a {
 
 .textbox {
   position: relative;
-  background: #1b1b1b;
+  background: #222432;
   color: #eee;
   height: 38px;
   width: 350px;

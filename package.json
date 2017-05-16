@@ -1,37 +1,30 @@
 {
-  "name": "package.json",
-  "version": "1.0.0",
+  "name": "frontpage",
+  "version": "1.0.1",
+  "description": "Personal bookmarklet for various links of interest",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-csso": "^3.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.1.2",
-    "gulp-livereload": "^3.8.1",
-    "gulp-jimp-resize": "2.0.2",
-    "gulp-imagemin": "^3.2.0",
-    "gulp-util": "3.0.8",
-    "vinyl": "2.0.1",
-    "bluebird": "3.5.0",
-    "pump": "^1.0.2"
+    "file-loader": "^0.11.1",
+    "node-sass": "^4.5.2",
+    "resolve-url-loader": "^2.0.2",
+    "sass-loader": "^6.0.3"
   },
-  "devDependencies": {
-    "gulp-jimp-resize": "^2.0.2",
-    "gulp-livereload": "^3.8.1",
-    "through2": "^2.0.3"
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "description": "![Portfolio](https://raw.githubusercontent.com/Jasius/Portfolio/gh-pages/src/images/portfolio.PNG)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jasius/Portfolio.git"
+    "url": "git+https://github.com/Jasius/Frontpage.git"
   },
   "keywords": [
-    "portfolio"
+    "bookmarks",
+    "startpage"
   ],
   "author": "Jaska",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jasius/Portfolio/issues"
+    "url": "https://github.com/Jasius/Frontpage/issues"
   },
-  "homepage": "https://github.com/Jasius/Portfolio#readme"
+  "homepage": "https://github.com/Jasius/Frontpage#readme"
 }
