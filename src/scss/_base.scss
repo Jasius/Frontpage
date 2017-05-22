@@ -121,16 +121,14 @@ a {
 }
 
 @media only screen and (max-width: 45em) {
-  .list {
-    max-width: 95vw;
-  }
   .textbox {
     width: 90vw;
   }
   .list {
+    max-width: 95vw;
+    overflow: hidden;
     ul {
       transition: 800ms max-height ease-out;
-      overflow: hidden;
       max-height: 0px;
       transition-delay: 0.2s;
     }
@@ -138,11 +136,7 @@ a {
       >ul,
       ul li {
         max-height: 800px;
-        display: block;
       }
-    }
-    ul li {
-      display: none;
     }
   }
   .list {

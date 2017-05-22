@@ -90,21 +90,18 @@ a {
     margin: 0; } }
 
 @media only screen and (max-width: 45em) {
-  .list {
-    max-width: 95vw; }
   .textbox {
     width: 90vw; }
-  .list ul {
-    transition: 800ms max-height ease-out;
-    overflow: hidden;
-    max-height: 0px;
-    transition-delay: 0.2s; }
-  .list:hover > ul,
-  .list:hover ul li {
-    max-height: 800px;
-    display: block; }
-  .list ul li {
-    display: none; }
+  .list {
+    max-width: 95vw;
+    overflow: hidden; }
+    .list ul {
+      transition: 800ms max-height ease-out;
+      max-height: 0px;
+      transition-delay: 0.2s; }
+    .list:hover > ul,
+    .list:hover ul li {
+      max-height: 800px; }
   .list {
     margin: 0px 5px; } }
 
