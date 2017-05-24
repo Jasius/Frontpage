@@ -119,4 +119,24 @@ a {
   .google:hover {
     opacity: 1; }
 
+.dropdown {
+  padding-left: 15px;
+  position: relative;
+  z-index: 99; }
+  .dropdown li {
+    margin-left: -15px; }
+  .dropdown ul {
+    display: none;
+    margin-top: -3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+  .dropdown:hover > ul,
+  .dropdown:active > ul,
+  .dropdown:focus > ul {
+    display: block;
+    background: red; }
+
+.dropdown:before {
+  content: "\25BC";
+  font-size: .625em; }
+
 /*# sourceMappingURL=styles.css.map */

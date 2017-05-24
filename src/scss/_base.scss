@@ -163,5 +163,32 @@ a {
   }
 }
 
+//
+//
+.dropdown {
+  padding-left: 15px;
+  position: relative;
+  z-index: 99;
+  li {
+    margin-left: -15px;
+  }
+  ul {
+    display: none;
+    margin-top: -3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  } //hover
+  &:hover>ul,
+  &:active>ul,
+  &:focus>ul {
+    display: block;
+    background: red;
+  }
+}
+
+.dropdown:before {
+  content: "\25BC";
+  font-size: .625em;
+}
+
 
 /*# sourceMappingURL=styles.css.map */
