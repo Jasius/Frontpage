@@ -26,7 +26,6 @@ a {
     padding: 0; }
     .list ul li {
       background: #222432;
-      height: 40px;
       color: #eee;
       line-height: 40px;
       transition: background ease-in-out 0.1s; }
@@ -89,6 +88,10 @@ a {
   .section {
     margin: 0; } }
 
+@media only screen and (min-width: 55em) {
+  .list ul li {
+    height: 40px; } }
+
 @media only screen and (max-width: 45em) {
   .textbox {
     width: 90vw; }
@@ -126,14 +129,18 @@ a {
   .dropdown li {
     margin-left: -15px; }
   .dropdown ul {
+    max-height: 800px;
     display: none;
     margin-top: -3px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+    .dropdown ul li {
+      height: 40px; }
+      .dropdown ul li:hover > ul {
+        max-height: 800px; }
   .dropdown:hover > ul,
   .dropdown:active > ul,
   .dropdown:focus > ul {
-    display: block;
-    background: red; }
+    display: block; }
 
 .dropdown:before {
   content: "\25BC";

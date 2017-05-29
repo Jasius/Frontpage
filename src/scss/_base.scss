@@ -36,7 +36,6 @@ a {
     padding: 0;
     li {
       background: $color-li-main;
-      height: 40px;
       color: $color-text;
       line-height: 40px;
       transition: background ease-in-out 0.1s;
@@ -120,6 +119,12 @@ a {
   }
 }
 
+@media only screen and (min-width: 55em) {
+  .list ul li {
+    height: 40px;
+  }
+}
+
 @media only screen and (max-width: 45em) {
   .textbox {
     width: 90vw;
@@ -164,7 +169,6 @@ a {
 }
 
 //
-//
 .dropdown {
   padding-left: 15px;
   position: relative;
@@ -173,15 +177,21 @@ a {
     margin-left: -15px;
   }
   ul {
+    max-height: 800px;
     display: none;
     margin-top: -3px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  } //hover
+    li {
+      height: 40px;
+      &:hover>ul {
+        max-height: 800px;
+      }
+    }
+  }
   &:hover>ul,
   &:active>ul,
   &:focus>ul {
     display: block;
-    background: red;
   }
 }
 
