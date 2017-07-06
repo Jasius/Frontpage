@@ -4,14 +4,22 @@
   "description": "Personal bookmarklet for various links of interest",
   "main": "gulpfile.js",
   "dependencies": {
-    "file-loader": "^0.11.1",
-    "node-sass": "^4.5.2",
-    "resolve-url-loader": "^2.0.2",
-    "sass-loader": "^6.0.3"
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-jimp-resize": "2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-util": "3.0.8",
+    "vinyl": "2.0.1",
+    "bluebird": "3.5.0",
+    "pump": "^1.0.2"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "gulp-jimp-resize": "^2.0.2",
+    "gulp-livereload": "^3.8.1",
+    "through2": "^2.0.3"
   },
   "repository": {
     "type": "git",
