@@ -8,7 +8,7 @@ body {
   font-family: $font-main;
   margin: 0;
   background: $color-background;
-  &.preload *{
+  &.preload * {
     animation-duration: 0s !important;
     transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
   }
@@ -46,6 +46,7 @@ a {
       &:hover,
       &:nth-child(2n):hover {
         background: $color-bg-hover;
+        overflow: visible;
       }
       a {
         padding-left: 15px;
@@ -126,6 +127,7 @@ a {
 @media only screen and (min-width: 55em) {
   .list ul li {
     height: 40px;
+    overflow: hidden;
   }
 }
 

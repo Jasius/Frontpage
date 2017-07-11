@@ -33,7 +33,8 @@ a {
       line-height: 40px;
       transition: background ease-in-out 0.1s; }
       .list ul li:hover, .list ul li:nth-child(2n):hover {
-        background: #282c3a; }
+        background: #282c3a;
+        overflow: visible; }
       .list ul li a {
         padding-left: 15px;
         display: block;
@@ -93,7 +94,8 @@ a {
 
 @media only screen and (min-width: 55em) {
   .list ul li {
-    height: 40px; } }
+    height: 40px;
+    overflow: hidden; } }
 
 @media only screen and (max-width: 45em) {
   .textbox {
