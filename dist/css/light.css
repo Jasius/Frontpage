@@ -16,7 +16,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0px 15px; }
+  margin: 0 15px; }
 
 .list {
   flex: 1 250px;
@@ -105,13 +105,13 @@ a {
     overflow: hidden; }
     .list ul {
       transition: 800ms max-height ease-out;
-      max-height: 0px;
+      max-height: 0;
       transition-delay: 0.2s; }
     .list:hover > ul,
     .list:hover ul li {
       max-height: 800px; }
   .list {
-    margin: 0px 5px; } }
+    margin: 0 5px; } }
 
 .container {
   text-align: center;
