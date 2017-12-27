@@ -1,0 +1,15 @@
+{
+  "short_name": "Frontpage",
+  "name": "Frontpage",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#222",
+  "background_color": "#ffffff"
+}
