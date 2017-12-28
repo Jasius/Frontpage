@@ -54,7 +54,6 @@ class Head extends React.Component {
           <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
           <meta name="theme-color" content={chromeTabColor} />
           <title>Frontpage {themeTitle}</title>
-          <link rel="canonical" href="http://mysite.com/example" />
           <link rel="stylesheet" href={stylesheet} />
         </Helmet>
         <button onClick={darktest}>dark</button>
@@ -63,7 +62,4 @@ class Head extends React.Component {
     )
   }
 }
-// https://cdn.rawgit.com/Jasius/8144aa61e74ca55b34e9da7ba41b0215/raw/8a7644a428393402bfc87e596341390878691790/light.css
-// https://cdn.rawgit.com/Jasius/8144aa61e74ca55b34e9da7ba41b0215/raw/87c1984dfbe3be849b1eabc6a97ad181766a1d0b/main.css
-// https://cdn.rawgit.com/Jasius/8144aa61e74ca55b34e9da7ba41b0215/raw/87c1984dfbe3be849b1eabc6a97ad181766a1d0b/modern.css
 export default Head
