@@ -9,7 +9,7 @@ class Search extends React.Component {
           <img className="google" alt="Google logo" src={searchImage}></img>
         </a>
         <form action="http://www.google.com/search">
-          <input className="textbox" name="q" placeholder="Google search" onenter="send()" autoComplete="on" maxlength="60"></input>
+          <input className="textbox" name="q" placeholder="Google search" autoComplete="on" maxLength="60"></input>
         </form>
       </div>
     )
