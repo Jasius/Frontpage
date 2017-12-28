@@ -1,0 +1,235 @@
+$font-main: "Segoe UI",
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+//colors
+body {
+  font-family: $font-main;
+  margin: 0;
+  background: $color-background;
+  &.preload * {
+    animation-duration: 0s !important;
+    transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-text;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+.list {
+  flex: 1 250px;
+  max-width: 300px;
+  margin: 5px 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      background: $color-li-main;
+      color: $color-text;
+      line-height: 40px;
+      transition: background ease-in-out 0.1s;
+      &:hover,
+      &:nth-child(2n):hover {
+        background: $color-bg-hover;
+        overflow: visible;
+      }
+      a {
+        padding-left: 15px;
+        display: block;
+        transition: .5s;
+      }
+      &:nth-child(2n) {
+        background: $color-li-sec;
+      }
+    }
+  }
+  h1 {
+    position: relative;
+    background: #00A388;
+    color: #eee;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.reddit h1 {
+  background: orangered;
+}
+
+.redditmod h1 {
+  background: #47d15f;
+}
+
+.social h1 {
+  background: #1da1f2;
+}
+
+.fun h1 {
+  background: #cd201f;
+}
+
+.admin h1 {
+  background: #ff9800;
+}
+
+.orangyred h1 {
+  background: #FF6138;
+}
+
+.darkblue h1 {
+  background: #04756F
+}
+
+.blueyish h1 {
+  background: #225378;
+}
+
+.textbox {
+  position: relative;
+  background: $color-textbox;
+  color: $color-text;
+  height: 38px;
+  width: 350px;
+  vertical-align: top;
+  border: 1px solid $color-textbox-border;
+  padding: 0 10px;
+  &:focus {
+    outline: none; //border-color: #22475d;
+  }
+}
+
+@media only screen and (max-width: 55em) {
+  .list {
+    max-width: 31vw
+  }
+  .section {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 55em) {
+  .list ul li {
+    height: 40px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 45em) {
+  .textbox {
+    width: 90vw;
+  }
+  .list {
+    max-width: 95vw;
+    overflow: hidden;
+    ul {
+      transition: 800ms max-height ease-out;
+      max-height: 0;
+      transition-delay: 0.2s;
+    }
+    &:hover {
+      >ul,
+      ul li {
+        max-height: 800px;
+      }
+    }
+  }
+  .list {
+    margin: 0 5px;
+  }
+}
+
+//google
+.container {
+  text-align: center;
+  margin: auto {
+    bottom: 20px;
+  }
+}
+
+.google {
+  margin: -50px auto -25px;
+  width: 400px;
+  height: 200px;
+  transition: opacity ease-in-out 0.5s;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+.dropdown {
+  padding-left: 15px;
+  position: relative;
+  z-index: 99;
+  li {
+    margin-left: -15px;
+  }
+  ul {
+    max-height: 800px;
+    margin-top: -3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    li {
+      height: 40px;
+      &:hover>ul {
+        max-height: 800px;
+      }
+    }
+  }
+  &:hover>ul {
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  &:hover>ul,
+  &:active>ul,
+  &:focus>ul {
+    display: block;
+  }
+}
+
+.dropdown:before {
+  content: "\25BC";
+  font-size: .625em;
+}
+
+
+/*# sourceMappingURL=styles.css.map */

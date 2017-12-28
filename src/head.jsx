@@ -6,6 +6,14 @@ import backgroundImage from './images/forest-min.jpeg'
 var themeTitle = 'Dark'
 var chromeTabColor = '#222'
 const themeStorage = window.localStorage
+function populateStorage () {
+  const themes = [
+    'main',
+    'light',
+    'modern'
+  ]
+  themeStorage.setItem('Theme', themes)
+}
 function setStyles () {
   themeStorage.getItem('Theme')
   if (themeStorage.Theme === 'light') {
@@ -19,14 +27,6 @@ function setStyles () {
     themeTitle = 'Modern'
     modern()
   }
-}
-function populateStorage () {
-  const themes = [
-    'main',
-    'light',
-    'modern'
-  ]
-  themeStorage.setItem(themes)
 }
 if (!themeStorage.getItem('Theme')) {
   populateStorage()
@@ -54,7 +54,7 @@ class Head extends React.Component {
           <meta name="theme-color" content={chromeTabColor} />
           <title>Frontpage {themeTitle}</title>
           <link rel="canonical" href="http://mysite.com/example" />
-          <link rel="stylesheet" href={'../public/css/' + themeStorage.Theme + '.css'}/>
+          <link rel="stylesheet" href={'../build/css/' + themeStorage.Theme + '.css'} />
         </Helmet>
         <button onClick={darktest}>dark</button>
         <button onClick={lighttest}>light</button>

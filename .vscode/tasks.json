@@ -17,6 +17,13 @@
             "problemMatcher": [
                 "$node-sass"
             ]
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "problemMatcher": [
+                "$eslint-compact"
+            ]
         }
     ]
 }
