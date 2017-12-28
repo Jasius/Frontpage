@@ -1,16 +1,23 @@
 // jshint esversion: 6
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import backgroundImage from './images/forest-min.jpeg'
 
 var themeTitle = 'Dark'
+var chromeTabColor = '#222'
 const themeStorage = window.localStorage
 function setStyles () {
   themeStorage.getItem('Theme')
   if (themeStorage.Theme === 'light') {
     themeTitle = 'Light'
+    chromeTabColor = '#eee'
+  }
+  function modern () {
+    document.body.style.backgroundImage = `url(${backgroundImage})`
   }
   if (themeStorage.Theme === 'modern') {
     themeTitle = 'Modern'
+    modern()
   }
 }
 function populateStorage () {
@@ -44,10 +51,10 @@ class Head extends React.Component {
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
           // add variable for meta content
-          <meta name="theme-color" content="#222" />
-          <link rel="stylesheet" href={'https://frontpage.jaska.co/dist/css/minified/' + themeStorage.getItem('Theme') + '.css'} />
+          <meta name="theme-color" content={chromeTabColor} />
           <title>Frontpage {themeTitle}</title>
           <link rel="canonical" href="http://mysite.com/example" />
+          <link rel="stylesheet" href={'../public/css/' + themeStorage.Theme + '.css'}/>
         </Helmet>
         <button onClick={darktest}>dark</button>
         <button onClick={lighttest}>light</button>

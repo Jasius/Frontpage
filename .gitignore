@@ -3,6 +3,7 @@
 
 # testing
 /coverage
+/src/scss/*.css
 
 # production
 /build

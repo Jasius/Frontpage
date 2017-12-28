@@ -4,10 +4,11 @@ import { render } from 'react-dom'
 import Search from './search'
 import Bookmarklet from './bookmarklet'
 import Head from './head'
+// import './scss/app.css'
 
 const App = () => (
-  <div>
-    <Head />
+  <div class={window.localStorage.Theme + ' ' + 'body'}>
+    <Head/>
     <Search />
     <Bookmarklet />
   </div>
