@@ -37,14 +37,14 @@ if (!themeStorage.getItem('Theme')) {
   setStyles()
 }
 
-function darktest () {
-  themeStorage.Theme = 'main'
-  window.location.reload()
-}
-function lighttest () {
-  themeStorage.Theme = 'light'
-  window.location.reload()
-}
+// function darktest () {
+//   themeStorage.Theme = 'main'
+//   window.location.reload()
+// }
+// function lighttest () {
+//   themeStorage.Theme = 'light'
+//   window.location.reload()
+// }
 class Head extends React.Component {
   render () {
     return (
@@ -56,8 +56,8 @@ class Head extends React.Component {
           <title>Frontpage {themeTitle}</title>
           <link rel="stylesheet" href={stylesheet} />
         </Helmet>
-        <button onClick={darktest}>dark</button>
-        <button onClick={lighttest}>light</button>
+        {/* <button onClick={darktest}>dark</button>
+        <button onClick={lighttest}>light</button> */}
       </div>
     )
   }
