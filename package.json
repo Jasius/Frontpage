@@ -1,9 +1,10 @@
 {
   "name": "frontpage",
   "description": "Personal bookmarklet for various links of interest",
-  "homepage": "http://jasius.github.io/Frontpage",
+  "homepage": "https://frontpage.jaska.co",
   "version": "1.0.2",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.2",
     "react": "16.0.0",
