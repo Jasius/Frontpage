@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import backgroundImage from './images/forest-min.jpeg'
 
 var themeTitle = 'Dark'
-var stylesheet = 'https://cdn.rawgit.com/Jasius/8144aa61e74ca55b34e9da7ba41b0215/raw/37b982c4350891d2db9d0849df4957b84fd4d275/main.css'
+var stylesheet = 'https://cdn.rawgit.com/Jasius/Frontpage/old-master/dist/css/minified/main.css'
 var chromeTabColor = '#222'
 const themeStorage = window.localStorage
 function populateStorage () {
@@ -20,14 +20,14 @@ function setStyles () {
   if (themeStorage.Theme === 'light') {
     themeTitle = 'Light'
     chromeTabColor = '#eee'
-    stylesheet = 'https://cdn.rawgit.com/Jasius/8144aa61e74ca55b34e9da7ba41b0215/raw/8a7644a428393402bfc87e596341390878691790/light.css'
+    stylesheet = 'https://cdn.rawgit.com/Jasius/Frontpage/old-master/dist/css/minified/light.css'
   }
   function modern () {
     document.body.style.backgroundImage = `url(${backgroundImage})`
   }
   if (themeStorage.Theme === 'modern') {
     themeTitle = 'Modern'
-    stylesheet = 'https://cdn.rawgit.com/Jasius/8144aa61e74ca55b34e9da7ba41b0215/raw/87c1984dfbe3be849b1eabc6a97ad181766a1d0b/modern.css'
+    stylesheet = 'https://cdn.rawgit.com/Jasius/Frontpage/old-master/dist/css/minified/modern.css'
     modern()
   }
 }
