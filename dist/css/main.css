@@ -105,7 +105,7 @@ a {
     overflow: hidden; }
     .list ul {
       transition: 800ms max-height ease-out;
-      max-height: 0;
+      max-height: 44px;
       transition-delay: 0.2s; }
     .list:hover > ul,
     .list:hover ul li {
