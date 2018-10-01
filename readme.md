@@ -1,3 +1,24 @@
+# Installation and requirements
+
+## Requirements
+* Node.js
+* NPM
+* Git (Unless you choose to download repo from the web in which case you can skip first two steps and then just do NPM install inside downloaded repository folder)
+
+## Installation
+1. Open terminal and `git clone repoName`
+2. `cd repoName`
+3. `npm install`
+4. `npm run`
+5. Change links in `bookmarklet.jsx`
+6. `npm build`
+
+## Installation with Netlify
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Jasius/Frontpage)
+1. Click deploy button
+2. Connect GitHub account
+3. Make changes within forked repository and they'll be visible on your Netlify hosted page whenever you'll push the changes.
+
 # Frontpage light
 ![Desktop](https://cloud.githubusercontent.com/assets/11031051/21482083/f899fbc8-cb77-11e6-83a5-5784f066d99c.png) 
 ![Mobile](https://cloud.githubusercontent.com/assets/11031051/21482164/14b36b4a-cb79-11e6-9328-3adfa0e3529e.png) 
