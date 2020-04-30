@@ -9,7 +9,8 @@
     "npm-run-all": "^4.1.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-helmet": "5.2.0"
+    "react-helmet": "5.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "eslint": "^4.14.0",
@@ -31,6 +32,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d build"
-  }
+    "deploy": "npm run build && gh-pages -d build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
